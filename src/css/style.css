@@ -22,9 +22,7 @@ time,mark,audio,video {
 --txt_color2:#ffffff;  
 --bg_color1: #ec1c3e;
 --txt_color4:  #898989;
-;
---txt_color_hover:#e3688e;
---txt_color_hover2:#25C5C2;
+--txt_color_hover:#6e0d1d;
 }
 /* HTML5 display-role reset for older browsers */
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
@@ -177,6 +175,10 @@ h3,
   justify-content: space-between;
 }
 
+a:hover,a:visited,a:active.a.active
+{
+  color:var(--txt_color_hover);
+}
  /* @media screen and (max-width: 768px) {
 h1,
   .h1 {
@@ -370,25 +372,34 @@ button {
 .genmenu>ul
 {
   position:absolute;
-  background: var(--bg_color1);
-  color: var (--txt_color2);
-  border-radius: 5px;
   width: 280px;
   left:46px;
   top:35px;
   z-index:900;
   display:none;
 }
-.genmenu>ul>li
+.submenu>li
 {
   padding:14px 45px 14px 36px;
   border-bottom: #c91835 1px solid;
-
 }
 
 .genmenu>ul>li>a
 {
   color:#ffffff;
+}
+.submenu
+{
+  background: var(--bg_color1);
+  border-radius: 5px;
+}
+.submenu li a
+{
+  color:#ffffff;
+}
+.submenu li a:hover,.submenu li a:visited,.submenu li a:active,.submenu li a.active
+{
+color:var(--txt_color_hover);
 }
 
 .search_btn
@@ -671,6 +682,55 @@ form input
 {
   font-weight: 900;
   font-size:17px;
+}
+
+/*Catalog*/
+
+.catalog_banner
+{
+  margin-top:25px;
+}
+
+.catalog_banner .rightside
+{
+  position:relative;
+  margin-left: 25px;
+}
+.catalog_banner .slide-text
+{
+  left:23px;
+  top:67px;
+}
+.catalog .container
+{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-column-gap: 15px;
+ grid-row-gap:15px;
+}
+
+.catalog .product
+{
+
+}
+.catalog .product p
+{
+  position: static;
+  font-size: 25px;
+}
+
+
+.catalog .product p.price
+{
+color: #c91835;
+}
+
+.catalog .gen_btn
+{
+position: relative;
+margin: 15px 25px 36px 25px;
+width: 235px;
+font-size: 20px;
 }
 /*Footer*/
 footer ul
