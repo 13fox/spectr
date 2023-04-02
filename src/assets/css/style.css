@@ -1,0 +1,1044 @@
+/***************************************************************Reset***************************************************/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+:root {
+  /*Txt color*/
+  --txt_color1: #000000;
+  --txt_color2: #ffffff;
+  --bg_color1: #ec1c3e;
+  --txt_color4: #898989;
+  --txt_color_hover: #6e0d1d;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:focus {
+  outline: none !important;
+}
+
+::-moz-focus-outer,
+::-moz-focus-inner {
+  border: 0px !important;
+  padding: 0;
+}
+
+a:focus,
+a:active,
+button:focus {
+  outline: 0 !important;
+  outline-color: transparent !important;
+  outline-width: 0 !important;
+  outline-style: none !important;
+  box-shadow: 0 0 0 0 rgba(0, 123, 255, 0) !important;
+}
+
+input,
+textarea,
+input:active,
+textarea:active {
+  outline: none;
+}
+
+input[type='checkbox']:focus,
+input[type='radio']:focus {
+  visibility: hidden;
+}
+
+.clear {
+  clear: both;
+  width: 100%;
+}
+
+button {
+  border: none;
+}
+
+/*******************************EndReset**********************************************************/
+
+/************************************GLOBAL******************************/
+@font-face {
+  font-family: "Manrope-Medium";
+  src: url("../fonts/Manrope-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Manrope-Regular";
+  src: url("../fonts/Manrope-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+@font-face {
+  font-family: "Manrope-ExtraBold";
+  src: url("../fonts/Manrope-ExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Manrope-SemiBold";
+  src: url("../fonts/Manrope-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Manrope-Bold";
+  src: url("../fonts/Manrope-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Manrope-Medium';
+  font-size: 15px;
+
+}
+
+p {
+  font-family: "Manrope-Regular";
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+/*h1,
+.h1 {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: 0 auto 50px;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  color: #364647;
+}*/
+h2,
+.h2 {
+  color: #000000;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 20px 0px 47px 0px;
+  text-align: left;
+  font-family: "Manrope-Bold";
+}
+
+h3,
+.h3 {
+  color: var(--txt_color1);
+  font-family: "Manrope-Bold";
+  font-size: 20px;
+  font-weight: bold;
+
+
+}
+
+.sp-between {
+  justify-content: space-between;
+}
+
+a:hover,
+a:active.a.active {
+  color: var(--txt_color_hover);
+}
+
+
+
+/* @media screen and (max-width: 768px) {
+h1,
+  .h1 {
+    margin: 30px auto 30px;
+    font-size: 24px;
+  }
+  h2,
+  .h2 {
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    margin: 0 auto 50px;
+    font-weight: 900;
+    font-size: 36px;
+    color: #364647;
+    margin: 0 auto 10px;
+    font-size: 22px;
+    padding: 0px 0px 12px 0px;
+  }
+
+  section {
+    margin-bottom: 5px;
+  }
+}*/
+
+h3,
+.h3 {
+  font-size: 26px;
+  color: #364647;
+}
+
+h4 {
+  color: #000000;
+  font-size: 25px;
+  padding-bottom: 25px;
+  font-weight: 900;
+}
+
+a {
+  text-decoration: none;
+  color: var(--txt_color1);
+  cursor: pointer;
+}
+
+a:hover {
+  color: #e3688e;
+}
+
+p {
+  margin: 0 0 20px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 1210px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.container::after {
+  clear: both;
+}
+
+.container_flex {
+  width: 1210px;
+  margin: 0 auto;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.container_grid {
+  width: 1210px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 48px;
+}
+
+.container_grid2 {
+  width: 1210px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+header .container,
+footer .container {
+  width: 1299px;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+}
+
+
+@media screen and (max-width: 970px) {
+  .container_flex {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+
+}
+
+
+
+
+section {
+  margin-bottom: 70px;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90vw;
+  }
+}
+
+.header_block1 {
+  height: 53px;
+  width: 100%;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.header_block1 .container {
+  padding-top: 25px;
+}
+
+.header_block2 {
+  height: 103px;
+  width: 100%;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.header_block2 .container {
+  padding-top: 25px;
+}
+
+/*Heightmenu*/
+
+
+.heightmenu ul li {
+  float: left;
+}
+
+.heightmenu ul li a {
+  font-size: 13px;
+  font-family: "Manrope-Regular";
+  padding-left: 15px;
+}
+
+.phone a {
+  font-family: "Manrope-ExtraBold";
+  font-size: 17px;
+  padding-left:15px;
+}
+.img_icon
+{
+  background-color: #ffffff;
+  padding:10px;
+  border-radius: 50%;
+}
+.img_icon img
+{
+  position: relative;
+  top:2px;
+}
+.email
+{
+  margin-left:60px;
+}
+.email a {
+  font-family: "Manrope-Regular";
+  font-size: 17px;
+  padding-left:15px;
+
+}
+
+.cat_btn {
+  font-family: "Manrope-SemiBold";
+  border: 1px solid #c3c3c3;
+  border-radius: 5px;
+  background: url('../img/quadra.png') no-repeat 10px 10px;
+  padding: 11px 17px 17px 47px;
+  height: 44px;
+  margin-left: 46px;
+  color: #000 !important;
+}
+
+.leftside,
+.rightside {
+  display: flex;
+}
+
+.genmenu {
+  position: relative;
+  margin-top:10px;
+}
+
+.genmenu>ul {
+  position: absolute;
+  width: 280px;
+  left: 46px;
+  top: 35px;
+  z-index: 900;
+  display: none;
+}
+.genmenu>ul.active
+{
+  display:block !important;
+}
+.submenu>li {
+  padding: 14px 45px 14px 36px;
+  border-bottom: #c91835 1px solid;
+}
+
+.submenu>li:last-child {
+  border-bottom: #c91835 0px solid;
+}
+
+.genmenu>ul>li>a {
+  color: #ffffff;
+}
+
+.submenu {
+  background: var(--bg_color1);
+  border-radius: 10px;
+}
+
+.submenu li a {
+  color: #ffffff;
+}
+
+.submenu li a:hover,
+.submenu li a:visited,
+.submenu li a:active,
+.submenu li a.active {
+  color: var(--txt_color_hover);
+}
+.cat_btn.active
+{
+  color:#ffffff !important;
+  background: url('../img/quadra_act.png') no-repeat 10px 10px  #ec1c3e;
+
+}
+.search_form
+{
+}
+.search_btn {
+  border: none;
+  background: url('../img/search_btn.png') no-repeat;
+  width: 21px;
+  height: 21px;
+  cursor: pointer;
+}
+.search_fld {
+  width: 20px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  padding: 20px 20px 20px 30px;
+    border-radius: 5px;
+    border: none;
+    margin: 0px 0px 10px 10px;
+    font-size: 15px;
+    font-family: 'Manrope-Regular';
+}
+
+/* Когда поле ввода получает фокус, измените его ширину на 100% */
+.search_fld:focus {
+  width: 80%;
+  border: 1px #898989 solid;
+
+}
+
+.gen_btn {
+  background: var(--bg_color1);
+  color: var(--txt_color2);
+  font-family: "Manrope-SemiBold";
+  padding: 12px 40px 12px 40px;
+  border-radius: 5px;
+  height: 45px;
+}
+
+
+.rightside .gen_btn {
+  margin-left: 32px;
+}
+
+/*Slider*/
+.slide-text {
+  position: absolute;
+  color: var(--txt_color2);
+  top: 90px;
+  left: 115px;
+  font-family: "Manrope-Medium";
+}
+
+h1.slide_title {
+  font-size: 50px;
+  color: var(--txt_color2);
+  font-family: "Manrope-ExtraBold";
+}
+
+.slide_longtitle {
+  font-size: 25px;
+  font-family: "Manrope-Medium";
+}
+
+.slider__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  padding: 8px 20px;
+  margin-bottom: 30px;
+  border: 1px solid #e4ebec;
+  font-size: 14px;
+  line-height: 170%;
+  text-transform: uppercase;
+  color: #839a9c;
+}
+
+.slider .swiper-slide img {
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.slider .swiper-pagination-bullets {
+  bottom: 15px;
+  z-index: 800;
+}
+
+.slider .swiper-pagination-bullet {
+  opacity: 0.7;
+  border: 1px solid #ffffff;
+  background: transparent;
+  cursor: pointer;
+}
+
+.slider .swiper-pagination-bullet-active {
+  width: 10px;
+  height: 10px;
+  background: #ffffff;
+  opacity: 0.7;
+}
+
+.slider {
+  position: relative;
+  margin-top: 50px;
+}
+
+.swiper-button-prev {
+  position: absolute;
+  left: 10%;
+  z-index: 800;
+  top: 312px;
+  width: 14px;
+  height: 24px;
+  /*background-size:14px 24px;*/
+  background: none;
+  display: none;
+}
+
+.swiper-button-next {
+  position: absolute;
+  right: 10%;
+  z-index: 800;
+  top: 312px;
+  width: 14px;
+  height: 24px;
+  /*background-size:14px 24px;*/
+  background: none;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .slider .container {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+
+  .swiper-container {
+    width: 100%;
+  }
+
+  .swiper-slide {
+    width: 50%;
+  }
+
+
+
+  .product-item__img img {
+    width: 100%;
+    max-width: 217px;
+  }
+
+  .swiper-button-next {
+    top: 45%;
+    background-image: url(../assets/img/btn_next.svg);
+  }
+
+  .swiper-button-prev {
+    top: 45%;
+    background-image: url(../assets/img/btn_prev.svg);
+  }
+}
+
+/*Banners*/
+.banner {
+  padding: 66px 40px 66px 40px;
+}
+
+.banner a {
+  color: #ec1c3e;
+  padding-top: 57px;
+}
+
+.banner1 {
+  background-image: url(../assets/img/banner/banner1.png);
+}
+
+.banner2 {
+  background-image: url(../assets/img/banner/banner2.png);
+}
+
+.banner3 {
+  background-image: url(../assets/img/banner/banner3.png);
+}
+
+
+/*Wildbeeries*/
+section.wb
+{
+  height:300px;
+}
+.wb .container {
+  border-radius: 5px 5px 5px 5px;
+  background: #f1f1f1;
+  overflow: hidden;
+  height: 100%;;
+}
+
+.wb .leftside {
+  width: 40%;
+  display: block;
+  position: relative;
+}
+
+.wb .leftside a {
+  display: block;
+  position: absolute;
+  height: 100%;
+  
+}
+
+.wb .leftside a:nth-child(1) {
+  left: -20px;
+
+}
+
+.wb .leftside a:nth-child(2) {
+  left: 10px;
+
+}
+
+.wb .leftside a:nth-child(3) {
+  left: 110px;
+  height: 327px;
+  width: 414px;
+  top:40px;
+
+}
+
+.wb .rightside {
+  flex-direction: column;
+  padding: 45px 55px 25px 77px;
+  width: 60%;
+}
+
+/*Catalog*/
+.product {
+  position: relative;
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+
+.product p,
+.product a.more {
+  font-size: 20px;
+  font-family: "Manrope-SemiBold";
+  position: absolute;
+  padding-left: 25px;
+}
+.catalog .product p,
+.product a.more {
+  padding-top:50px;
+}
+
+.more {
+  color: #ec1c3e;
+}
+
+/*Contacts*/
+.contacts form {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 35px;
+  ;
+}
+
+.contact input,
+form textarea {
+  padding: 20px 20px 20px 30px;
+  border-radius: 5px;
+  border: none;
+  margin: 0px 0px 10px 10px;
+  font-size: 15px;
+  font-family: 'Manrope-Regular';
+
+}
+
+.contacts form textarea {
+  width: 98%;
+  height: 170px;
+
+}
+
+
+
+.contacts .container {
+  border-radius: 5px 5px 5px 5px;
+  background: #f1f1f1;
+}
+
+.contacts .leftside {
+  flex-direction: column;
+  padding: 55px 15px 55px 55px;
+}
+
+.contacts .leftside p:nth-child(2) {
+  color: var(--txt_color4);
+}
+
+.contacts .leftside p:nth-child(3) {
+  font-weight: 900;
+  font-size: 17px;
+}
+
+/*Catalog*/
+
+.catalog_banner {
+  margin-top: 25px;
+}
+
+.catalog_banner .leftside {
+  width: 313px;
+}
+
+.catalog_banner .container {
+  border-radius: 10px 10px 10px 10px;
+}
+
+.catalog_banner .rightside {
+  position: relative;
+  margin-left: 25px;
+}
+
+.catalog_banner .slide-text {
+  left: 23px;
+  top: 67px;
+}
+
+.catalog .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+
+
+
+.catalog .product p {
+  position: static;
+  font-size: 20px;
+}
+
+
+.catalog .product p.price {
+  color: #c91835;
+}
+
+.catalog .gen_btn {
+  position: relative;
+  margin: 15px 25px 36px 25px;
+  width: 235px;
+  font-size: 20px;
+}
+
+.contacts .gen_btn {
+  margin-left: 10px;
+  margin-top: 25px;
+}
+
+.catalog_icon .leftside {
+  background: #f1f1f1;
+  border-radius: 10px;
+  flex-direction: column;
+  padding: 35px 20px 25px 20px;
+  width: 313px;
+
+}
+
+.catalog_icon .rightside {
+  display: block;
+  margin-left: 25px;
+}
+
+.catalog_rubric {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  grid-row-gap: 15px;
+  grid-column-gap: 15px;
+  grid-auto-rows: minmax(245px, auto);
+
+}
+
+
+.catalog_rubric .product {
+  background: #f1f1f1;
+  border-radius: 10px;
+  grid-auto-rows: minmax(251px, auto);
+  width: 287px;
+  position: relative;
+}
+
+.catalog_rubric .product p {
+  position: static;
+  padding: 40px 20px 20px 40px;
+
+}
+
+.catalog_rubric .product>a {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  display: block;
+}
+
+.inner_block .leftside, .inner_block2 .leftside
+{
+  width:55%;
+}
+.inner_block2 .container
+{
+  flex-direction: row-reverse;
+
+}
+.inner_block .container .leftside
+{
+  margin-right: 60px;;
+}
+.inner_block2 .container .rightside
+{
+  margin-right:60px;
+}
+/*Footer*/
+footer ul {
+  padding-top: 30px;
+}
+
+.footer__left {
+  flex-direction: column;
+  width: 25%;
+}
+
+.footer__left .contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__left .contacts .email {
+  padding-left: 0px;
+}
+
+.footer__center {
+  margin-left: 130px;
+}
+
+.footer__right {
+  margin-left: 60px;
+
+}
+
+.footer__right ul {
+  -webkit-columns: 3;
+  -moz-columns: 3;
+  columns: 3;
+}
+
+/*Modal*/
+
+/* Модальный (фон) */
+.modal {
+  display: block; /* Скрыто по умолчанию */
+  position: fixed; /* Оставаться на месте */
+  z-index: 1; /* Сидеть на вершине */
+  left: 0;
+  top: 0;
+  width: 100%; /* Полная ширина */
+  height: 100%; /* Полная высота */
+  overflow: auto; /* Включите прокрутку, если это необходимо */
+  background-color: rgb(0,0,0); /* Цвет запасной вариант */
+  background-color: rgba(0,0,0,0.4); /* Черный с непрозрачностью */
+}
+
+/* Модальное содержание/коробка */
+.modal-content {
+  background-color: #f1f1f1;
+  margin: 15% auto; /* 15% сверху и по центру */
+  padding: 20px;
+  border-radius: 10px;
+  width: 40%; /* Может быть больше или меньше, в зависимости от размера экрана */
+}
+
+/* Кнопка закрытия */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

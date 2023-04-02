@@ -64,8 +64,9 @@
                     </div>
                 </div>
                 <div class="rightside">
-                    <form action="" method="post">
+                    <form action="" method="post" class="search_form">
                         <input type="button" class="search_btn" />
+                        <input type="text" class="search_fld" name="search" placeholder="Поиск..">
                     </form>
                     <a href="#" class="gen_btn">
                         Связаться с нами
@@ -75,135 +76,185 @@
         </div>
     </header>
 
-    <section class="catalog_banner">
+
+    <section class="slider">
+        <div class="swiper-button-prev">
+            <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M13.5412 2.95409C14.1322 2.36315 14.1322 1.40506 13.5412 0.814122C12.9503 0.223187 11.9922 0.223188 11.4013 0.814122L0.529533 11.6858C0.514301 11.7011 0.514301 11.7258 0.529532 11.741L11.4013 22.6127C11.9922 23.2037 12.9503 23.2037 13.5412 22.6127C14.1322 22.0218 14.1322 21.0637 13.5412 20.4728L4.78188 11.7134L13.5412 2.95409Z"
+                    fill="#53D3DE" fill-opacity="0.5" />
+            </svg>
+        </div>
+        <div class="container">
+            <div class="main-slider swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-text">
+                            <h1 class="slide_title">Продукция на заказ</h1>
+                            <p class="slide_longtitle">Пленка, стрейч, мешки, пакеты.</p>
+                            <p>Противоположная точка зрения подразумевает, что элементы <br />политического процесса
+                                являются только методом политического <br />п участия и в равной степени предоставлены
+                                сами себе. Кстати, элементы <br />политического процесса неоднозначны и будут объединены
+                                в
+                                целые кластеры себе
+                                подобных.</p>
+                        </div>
+                        <picture>
+                            <source srcset="assets/img/slider/slide__mobile.jpg" media="(max-width: 668px)">
+                            <img src="assets/img/slider/slide1.jpg" alt="slide 1">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="assets/img/slider/slide__mobile.jpg" media="(max-width: 668px)">
+                            <img src="assets/img/slider/slide.jpg" alt="slide 1">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="assets/img/slider/slide__mobile.jpg" media="(max-width: 668px)">
+                            <img src="assets/img/slider/slide.jpg" alt="slide 1">
+                        </picture>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="swiper-button-next">
+            <svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M1.31913 20.4717C0.7282 21.0626 0.7282 22.0207 1.31913 22.6117C1.91007 23.2026 2.86816 23.2026 3.4591 22.6117L14.3308 11.7399C14.346 11.7247 14.346 11.7 14.3308 11.6848L3.4591 0.81306C2.86816 0.222125 1.91007 0.222125 1.31913 0.813058C0.728198 1.40399 0.728198 2.36209 1.31913 2.95302L10.0785 11.7124L1.31913 20.4717Z"
+                    fill="#53D3DE" fill-opacity="0.5" />
+            </svg>
+        </div>
+    </section>
+
+
+    <section class="banners">
+        <div class="container_grid">
+            <div class="banner banner1">
+                <h4>Производство</h4>
+                <p>Противоположная точка зрения подразумевает, что элементы политического процесса являются только
+                    методом политического участия и в равной степени.</p>
+                <a href="#">Подробнее</a>
+            </div>
+            <div class="banner banner2">
+                <h4>Производство</h4>
+                <p>Противоположная точка зрения подразумевает, что элементы политического процесса являются только
+                    методом политического участия и в равной степени.</p>
+                <a href="#">Подробнее</a>
+            </div>
+            <div class="banner banner3">
+                <h4>Каталог продукции</h4>
+                <p>Противоположная точка зрения подразумевает, что элементы политического процесса являются только
+                    методом политического участия и в равной степени.</p>
+                <a href="#">Подробнее</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="wb">
         <div class="container">
             <div class="leftside">
-                <ul class="submenu">
-                    <li><a href="#"> Пленка полиэтиленовая</a></li>
-                    <li><a href="#">Пленка нарезка 1 сорт</a></li>
-                    <li><a href="#"> Пленка полиэтиленовая техническая 2 сорт</a></li>
-                    <li><a href="#"> Пленка полиэтиленовая черная</a></li>
-                </ul>
+                <a href=""><img src="assets/img/logo_ozon.png" alt="" title=""></a>
+                <a href=""><img src="assets/img/logo-wb.png" alt="" title=""></a>
+                <a href="#"><img src="assets/img/logo_ymarket.png" alt=""></a>
 
             </div>
             <div class="rightside">
-                <div class="slide-text">
-                    <h1 class="slide_title">Пленка парниковая</h1>
-                </div>
-                <img src="assets/img/banner_cat.png" alt="" title="" />
+                <h4 class="bigtxt">
+                    Подберем для вас необходимую упаковку, соответствующую стандартам маркетплейсов
+                </h4>
+                <p class="smalltxt">
+                    Вы решили выходить на маркетплейсы? Хорошая идея, которая даст в перспективе неплохой рост продаж.
+                    Но, как всегда есть куча подводных камней при работе с ними. Одним из них является неправильная
+                    упаковка и маркировка товара.
+                </p>
             </div>
         </div>
     </section>
+
 
     <section class="catalog">
         <div class="container">
-            <div class="product">
-                <a href="#">
-                    <img src="assets/img/product.png" alt="" class="">
-                </a>
-                <p>
-                    Пленка парниковая<br />
-                    3мх100м 60мкм
-                </p>
-                <p class="price">
-                    2800,00 руб/рулон
-                </p>
-                <button class="gen_btn">Заказать</button>
-            </div>
-            <div class="product">
-                <a href="#">
-                    <img src="assets/img/product.png" alt="" class="">
-                </a>
-                <p>
-                    Пленка парниковая<br />
-                    3мх100м 60мкм
-                </p>
-                <p class="price">
-                    2800,00 руб/рулон
-                </p>
-                <button class="gen_btn">Заказать</button>
-            </div>
-            <div class="product">
-                <a href="#">
-                    <img src="assets/img/product.png" alt="" class="">
-                </a>
-                <p>
-                    Пленка парниковая<br />
-                    3мх100м 60мкм
-                </p>
-                <p class="price">
-                    2800,00 руб/рулон
-                </p>
-                <button class="gen_btn">Заказать</button>
-            </div>
-            <div class="product">
-                <a href="#">
-                    <img src="assets/img/product.png" alt="" class="">
-                </a>
-                <p>
-                    Пленка парниковая<br />
-                    3мх100м 60мкм
-                </p>
-                <p class="price">
-                    2800,00 руб/рулон
-                </p>
-                <button class="gen_btn">Заказать</button>
-            </div>
-            <div class="product">
-                <a href="#">
-                    <img src="assets/img/product.png" alt="" class="">
-                </a>
-                <p>
-                    Пленка парниковая<br />
-                    3мх100м 60мкм
-                </p>
-                <p class="price">
-                    2800,00 руб/рулон
-                </p>
-                <button class="gen_btn">Заказать</button>
-            </div>
-            <div class="product">
-                <a href="#">
-                    <img src="assets/img/product.png" alt="" class="">
-                </a>
-                <p>
-                    Пленка парниковая<br />
-                    3мх100м 60мкм
-                </p>
-                <p class="price">
-                    2800,00 руб/рулон
-                </p>
-                <button class="gen_btn">Заказать</button>
-            </div>
-            <div class="product">
-                <a href="#">
-                    <img src="assets/img/product.png" alt="" class="">
-                </a>
-                <p>
-                    Пленка парниковая<br />
-                    3мх100м 60мкм
-                </p>
-                <p class="price">
-                    2800,00 руб/рулон
-                </p>
-                <button class="gen_btn">Заказать</button>
-            </div>
-            <div class="product">
-                <a href="#">
-                    <img src="assets/img/product.png" alt="" class="">
-                </a>
-                <p>
-                    Пленка парниковая<br />
-                    3мх100м 60мкм
-                </p>
-                <p class="price">
-                    2800,00 руб/рулон
-                </p>
-                <button class="gen_btn">Заказать</button>
-            </div>
-        </div>
+            <h2>Каталог продукции</h2>
 
+        </div>
+        <div class="container_grid2">
+            <!--Start Product-->
+            <div class="product">
+                <p>Пленка
+                    полиэтиленовая</p>
+                <a href="#">
+                    <img src="assets/img/prpduct.jpg" alt="" class="">
+                </a>
+            </div>
+            <!--EndProduct-->
+            <!--Start Product-->
+            <div class="product">
+                <p>Пленка
+                    полиэтиленовая</p>
+                <a href="#">
+                    <img src="assets/img/prpduct.jpg" alt="" class="">
+                </a>
+            </div>
+            <!--EndProduct-->
+            <!--Start Product-->
+            <div class="product">
+                <p>Пленка
+                    полиэтиленовая</p>
+                <a href="#">
+                    <img src="assets/img/prpduct.jpg" alt="" class="">
+                </a>
+            </div>
+            <!--EndProduct-->
+            <!--Start Product-->
+            <div class="product">
+                <p>Пленка
+                    полиэтиленовая</p>
+                <a href="#">
+                    <img src="assets/img/prpduct.jpg" alt="" class="">
+                </a>
+            </div>
+            <!--EndProduct-->
+            <!--Start Product-->
+            <div class="product">
+                <p>Пленка
+                    полиэтиленовая</p>
+                <a href="#">
+                    <img src="assets/img/prpduct.jpg" alt="" class="">
+                </a>
+            </div>
+            <!--EndProduct-->
+            <!--Start Product-->
+            <div class="product">
+                <p>Пленка
+                    полиэтиленовая</p>
+                <a href="#">
+                    <img src="assets/img/prpduct.jpg" alt="" class="">
+                </a>
+            </div>
+            <!--EndProduct-->
+            <!--Start Product-->
+            <div class="product">
+                <p>Пленка
+                    полиэтиленовая</p>
+                <a href="#">
+                    <img src="assets/img/prpduct.jpg" alt="" class="">
+                </a>
+            </div>
+            <!--EndProduct-->
+            <!--Start Product-->
+            <div class="product">
+                <a href="#" class="more">
+                    Посмотреть <br />весь каталог <img src="assets/img/right_arrow.png" alt="">
+                </a>
+
+            </div>
+            <!--EndProduct-->
     </section>
+
     <section class="contacts">
         <div class="container">
             <div class="leftside">
@@ -216,10 +267,14 @@
                 <p>Выберите удобный способ консультации</p>
                 <div class="row">
                     <span class="phone">
-                        <img src="assets/img/icon_phone.png" alt="">
+                        <span class="img_icon">
+                            <img src="assets/img/icon_phone.png" alt="">
+                        </span>
                         <a href="tel:+74957256630">+7 (495) 725-66-30</a></span>
                     <span class="email">
-                        <img src="assets/img/icon_email.png" alt="">
+                        <span class="img_icon">
+                            <img src="assets/img/icon_email.png" alt="">
+                        </span>
                         <a href="mailto:info@plenka-spectr.ru"> info@plenka-spectr.ru </a>
                     </span>
 
@@ -245,6 +300,9 @@
             </div>
         </div>
     </section>
+
+
+
 
     <footer class="footer">
         <div class="container">
@@ -292,9 +350,7 @@
                 </ul>
             </div>
         </div>
-    </footer>
-
-    <!--<div id="openModal" class="modal">
+    </footer>    <!--<div id="openModal" class="modal">
         <div class="modal-dialog">
             <div class="modal-content">               
                 <div class="modal-body">                   
